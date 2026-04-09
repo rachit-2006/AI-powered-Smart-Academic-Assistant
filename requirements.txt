@@ -1,12 +1,11 @@
 streamlit
-langchain
-langchain-community
-langchain-core
-langchain-text-splitters
+langchain==0.2.0
+langchain-community==0.2.0
+langchain-core==0.2.0
+langchain-text-splitters==0.2.0
 langchain-groq
 chromadb==0.4.24
 sentence-transformers
 pymupdf
 python-dotenv
-torch
-torchvision
+pydantic==1.10.13
