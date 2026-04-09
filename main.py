@@ -3,7 +3,7 @@ from langchain_community.document_loaders import PyPDFLoader, UnstructuredFileLo
 
 import tempfile
 import os
-
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 from pydantic import BaseModel, Field
 from langchain_core.prompts import PromptTemplate
@@ -72,7 +72,8 @@ if st.button("Get Answer"):
         embeddings=HuggingFaceEmbeddings(model_name='sentence-transformers/all-MiniLM-L6-v2')
         vector_store=Chroma.from_documents(
             documents=chunks,
-            embedding=embeddings
+            embedding=embeddings,
+
         )
 
         retriever=vector_store.as_retriever(search_kwargs={'k':6})
