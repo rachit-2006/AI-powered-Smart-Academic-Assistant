@@ -7,8 +7,6 @@ import os
 from pydantic import BaseModel, Field
 from langchain_core.prompts import PromptTemplate
 
-from langchain.text_splitters import RecursiveCharacterTextSplitter
-
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain_groq import ChatGroq
 
