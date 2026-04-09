@@ -1,22 +1,13 @@
+# secrets
 .env
 
-# Python cache
+# python cache
 __pycache__/
 *.pyc
 
-# Virtual environment
-venv/
-env/
+# editor junk
+tempCodeRunnerFile.python
 
-# Streamlit cache
-.streamlit/
-
-# IDE files
-.vscode/
-.idea/
-
-# OS junk
-.DS_Store
-Thumbs.db
-PROJECT2.zip
+# large / local data
 chroma_db/
+*.zip
