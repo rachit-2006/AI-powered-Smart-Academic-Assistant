@@ -13,7 +13,7 @@ from langchain_groq import ChatGroq
 
 from langchain.schema import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain.vectorstores import Chroma 
+from langchain_community.vectorstores import Chroma 
 from dotenv import load_dotenv
 
 load_dotenv()
