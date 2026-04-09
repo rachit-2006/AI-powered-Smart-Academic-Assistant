@@ -6,3 +6,5 @@ chromadb
 sentence-transformers
 pymupdf
 python-dotenv
+torch
+torchvision
